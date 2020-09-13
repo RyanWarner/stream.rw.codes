@@ -1,6 +1,9 @@
 import { createGlobalStyle } from 'styled-components'
+import { GlobalType } from './Type'
 
 export const GlobalStyle = createGlobalStyle`
+  ${GlobalType}
+
   html {
     margin: 0;
     padding: 0;

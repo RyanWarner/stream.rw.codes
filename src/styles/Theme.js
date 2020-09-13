@@ -1,5 +1,7 @@
+const sansSerifFallback = "'-apple-system', 'BlinkMacSystemFont', 'Helvetica Neue', 'Roboto', 'sans-serif'"
+
 const typeTokens = {
-  fontFamily: 'ClearSans, sans-serif'
+  fontFamily: `'ClearSans', ${sansSerifFallback}`
 }
 
 const shared = {
