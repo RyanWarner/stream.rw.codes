@@ -6,7 +6,8 @@ const typeTokens = {
 
 const shared = {
   blue10: '#111A20',
-  blue35: '#3B5466'
+  blue35: '#3B5466',
+  red: '#E73E3E'
 }
 
 export default {
