@@ -1,18 +1,21 @@
+import { useRouter } from 'next/router'
 import dayjs from 'dayjs'
 
 import * as S from './styles'
 import { Timer, Hearts } from '../'
 import { Time } from '../Icons'
 
-const title = 'Morning design sesh'
+const defaultTitle = 'Morning design sesh'
 const date = dayjs().format('dddd, MMM DD YYYY')
 
 export default function StreamStarting () {
+  const { query: { title } } = useRouter()
+
   return (
     <S.StreamStarting>
       <Hearts />
       <S.Date>{date}</S.Date>
-      <S.Title>{title}</S.Title>
+      <S.Title>{title || defaultTitle}</S.Title>
       <S.IconCards>
         <a href='https://twitter.com/RyanWarnerCodes'>
           <S.StyledIconCard
