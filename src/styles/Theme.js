@@ -1,10 +1,16 @@
 const typeTokens = {
-  fontFamily: 'Lato, sans-serif'
+  fontFamily: 'ClearSans, sans-serif'
+}
+
+const shared = {
+  blue10: '#111A20',
+  blue35: '#3B5466'
 }
 
 export default {
   light: {
     ...typeTokens,
+    ...shared,
     background: '#FBFBF9',
     text10: '#1E1E1B',
     text20: '#696966',
@@ -14,6 +20,7 @@ export default {
   },
   dark: {
     ...typeTokens,
+    ...shared,
     background: '#171716',
     text10: '#FBFBF9',
     text20: '#9C9C96',

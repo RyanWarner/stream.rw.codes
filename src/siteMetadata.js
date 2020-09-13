@@ -1,11 +1,11 @@
 export default {
-  title: 'NextJS MDX Digital Garden Starter',
+  title: 'Ryan Warner Streams',
   description:
-    'An opinionated starting point for authoring interactive content using MDX and NextJS',
+    'Elements and overlays used for my live streams.',
   twitterHandle: '@RyanWarnerCodes',
   githubUsername: 'RyanWarner',
-  author: 'Your Name',
+  author: 'Ryan Warner',
   favicon: '/favicon.png',
   ogImage: '/ogImage.png',
-  url: 'https://next-mdx.warner.codes'
+  url: 'https://stream.rw.codes'
 }

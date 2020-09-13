@@ -3,6 +3,7 @@ import { ThemeProvider } from 'styled-components'
 
 import { GlobalStyle } from '../styles/Global'
 import Theme from 'styles/Theme'
+import '../styles/FontFaces.css'
 
 export default class MyApp extends App {
   render () {
