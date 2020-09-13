@@ -1,0 +1,33 @@
+{
+  "name": "next-mdx-digital-garden-starter",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "prettier-standard --lint 'src/**/*.{js,jsx,json,md}'"
+  },
+  "dependencies": {
+    "@mdx-js/loader": "^2.0.0-next.7",
+    "@mdx-js/runtime": "^2.0.0-next.7",
+    "@mdx-js/tag": "^0.20.3",
+    "@next/mdx": "9.5.1",
+    "fast-glob": "3.2.4",
+    "gray-matter": "4.0.2",
+    "next": "9.5.3",
+    "prop-types": "15.7.2",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "styled-components": "5.2.0"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-export-default-from": "7.10.4",
+    "babel-plugin-module-resolver": "4.0.0",
+    "babel-plugin-remove-export-keywords": "1.6.16",
+    "babel-plugin-styled-components": "1.11.1",
+    "file-loader": "6.1.0",
+    "prettier-standard": "16.4.1",
+    "url-loader": "4.1.0"
+  }
+}
