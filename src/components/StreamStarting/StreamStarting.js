@@ -1,22 +1,16 @@
-import React, { useEffect } from 'react'
 import dayjs from 'dayjs'
 
 import * as S from './styles'
-import { Timer } from '../'
+import { Timer, Hearts } from '../'
 import { Time } from '../Icons'
-import hearts from './hearts'
 
 const title = 'Morning design sesh'
 const date = dayjs().format('dddd, MMM DD YYYY')
 
 export default function StreamStarting () {
-  useEffect(async () => {
-    await hearts.initialize()
-    hearts.start()
-  }, [])
-
   return (
     <S.StreamStarting>
+      <Hearts />
       <S.Date>{date}</S.Date>
       <S.Title>{title}</S.Title>
       <S.IconCards>

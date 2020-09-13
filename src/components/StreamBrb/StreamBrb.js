@@ -1,16 +1,10 @@
-import React, { useEffect } from 'react'
-
 import * as S from './styles'
-import hearts from '../StreamStarting/hearts'
+import { Hearts } from 'components'
 
 const StreamBrb = props => {
-  useEffect(async () => {
-    await hearts.initialize()
-    hearts.start()
-  }, [])
-
   return (
     <S.StreamBrbComponent>
+      <Hearts />
       <S.Title>Be right back</S.Title>
     </S.StreamBrbComponent>
   )

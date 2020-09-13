@@ -1,46 +1,42 @@
-import { SEO, PostSnippet, GitHub, Header } from 'components'
+import Link from 'next/link'
+
 import * as S from './styles'
+import { Hearts } from 'components'
 
-const githubUrl =
-  'https://github.com/RyanWarner/next-mdx-digital-garden-starter'
+const menuItems = [{
+  name: 'Starting',
+  url: '/starting'
+}, {
+  name: 'Chatting',
+  url: '/chatting'
+}, {
+  name: 'Commands',
+  url: '/commands'
+}, {
+  name: 'BRB',
+  url: '/brb'
+}, {
+  name: 'Ending',
+  url: '/ending'
+}]
 
-export default function HomePage ({ allMdx }) {
+const HomePage = props => {
   return (
-    <S.Wrap>
-      <SEO />
-      <Header />
-      <S.Main>
-        <S.H1>
-          NextJS + MDX
-          <br />
-          Digital Garden Starter
-        </S.H1>
-
-        <S.FeatureList>
-          <S.ListItem>
-            Create top level routes from .mdx files organized however you want.
-          </S.ListItem>
-          <S.ListItem>
-            Statically generated routes using Next’s `getStaticPaths`.
-          </S.ListItem>
-          <S.ListItem>Supports frontmatter (thanks to gray-matter).</S.ListItem>
-        </S.FeatureList>
-
-        <S.GitHubButton href={githubUrl}>
-          <GitHub />
-          <span>View source on GitHub</span>
-        </S.GitHubButton>
-
-        <S.H2>Featured posts</S.H2>
-        <S.PostList>
-          {allMdx.map(item => (
-            <S.PostListItem key={item.slug}>
-              <PostSnippet {...item} />
-            </S.PostListItem>
-          ))}
-        </S.PostList>
-      </S.Main>
-      <S.StyledFooter />
-    </S.Wrap>
+    <S.StreamChattingComponent>
+      <Hearts />
+      <S.Menu>
+        {menuItems.map((item, index) => {
+          return (
+            <Link href={item.url} passHref key={index}>
+              <S.A>
+                {item.name}
+              </S.A>
+            </Link>
+          )
+        })}
+      </S.Menu>
+    </S.StreamChattingComponent>
   )
 }
+
+export default HomePage
