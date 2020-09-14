@@ -6,6 +6,6 @@ export default {
   githubUsername: 'RyanWarner',
   author: 'Ryan Warner',
   favicon: '/favicon.png',
-  ogImage: '/ogImage.png',
+  ogImage: 'og-image.png',
   url: 'https://stream.rw.codes'
 }
