@@ -7,5 +7,5 @@ export default {
   author: 'Ryan Warner',
   favicon: '/favicon.png',
   ogImage: 'og-image.png',
-  url: 'https://stream.rw.codes'
+  url: 'https://stream.rw.codes/'
 }
