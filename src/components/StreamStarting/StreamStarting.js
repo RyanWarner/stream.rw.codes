@@ -1,3 +1,4 @@
+import dynamic from 'next/dynamic'
 import { useRouter } from 'next/router'
 import dayjs from 'dayjs'
 
@@ -7,6 +8,9 @@ import { Time } from '../Icons'
 
 const defaultTitle = 'Morning design sesh'
 const date = dayjs().format('dddd, MMM DD YYYY')
+// const date = dynamic(() =>
+//   import('dayjs').then((dayjs) => dayjs().format('dddd, MMM DD YYYY'))
+// )
 
 export default function StreamStarting () {
   const { query: { title } } = useRouter()
