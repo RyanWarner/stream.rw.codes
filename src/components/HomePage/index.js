@@ -1,7 +1,7 @@
 import Link from 'next/link'
 
 import * as S from './styles'
-import { Hearts } from 'components'
+import { Hearts, SEO } from 'components'
 
 const menuItems = [{
   name: 'Starting',
@@ -23,6 +23,7 @@ const menuItems = [{
 const HomePage = props => {
   return (
     <S.StreamChattingComponent>
+      <SEO />
       <Hearts />
       <S.Menu>
         {menuItems.map((item, index) => {
